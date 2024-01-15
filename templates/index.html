@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+
+    <ul>
+        <li>
+            <img src={{context.cat}} >
+            <a href="{{ url_for('cat') }}">Cat picture</a>
+        </li>
+        <li>
+            <img src={{context.dog}} >
+            <a href="{{ url_for('dog') }}">Dog picture</a>  
+        </li>
+         
+    </ul>
+    
+
+</body>
+</html>
